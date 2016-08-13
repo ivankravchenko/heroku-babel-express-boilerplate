@@ -1,12 +1,16 @@
 {
   "name": "heroku-babel-express-boilerplate",
   "version": "0.0.1",
+  "description": "Simple ExpressJS app boilerplate with development/production scripts, Babel integration, Heroku support and Bunyan logger.",
+  "license": "MIT",
+  "repository": "https://github.com/ivankravchenko/heroku-babel-express-boilerplate.git",
   "scripts": {
     "dev": "NODE_ENV=development babel-node src/app.js | bunyan",
     "build": "babel src --out-dir dist --source-maps --ignore spec.js,test.js",
     "start": "node dist/app.js",
     "prepublish": "npm run build",
-    "heroku-postbuild": "npm install --only=dev && npm run build && npm prune --production"
+    "heroku-postbuild": "npm install --only=dev && npm run build && npm prune --production",
+    "lint": "eslint src"
   },
   "dependencies": {
     "bunyan": "^1.8.1",
