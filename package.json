@@ -6,7 +6,7 @@
     "build": "babel src --out-dir dist --source-maps --ignore spec.js,test.js",
     "start": "node dist/app.js",
     "prepublish": "npm run build",
-    "heroku-postbuild": "npm install --dev ; npm run build"
+    "heroku-postbuild": "npm install --only=dev && npm run build && npm prune --production"
   },
   "dependencies": {
     "bunyan": "^1.8.1",
