@@ -2,10 +2,11 @@
 Simple ExpressJS app boilerplate.
 
 ## Features
-* development/production scripts,
+* Development and production scripts,
 * Babel integration,
 * Bunyan logger,
-* Heroku deployment support.
+* Heroku deployment support,
+* Airbnb's ESLint config.
 
 ## Development
 ```bash
