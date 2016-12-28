@@ -1,6 +1,6 @@
 build:
   image: node
   commands:
-    - npm install --dev
-    - npm run build
-    - npm prune --production
+    - npm install --dev --loglevel warn
+    - npm run build --loglevel warn
+    - npm prune --production --loglevel warn
