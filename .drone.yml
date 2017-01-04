@@ -4,3 +4,4 @@ build:
     - npm install --dev --loglevel warn
     - npm run build --loglevel warn
     - npm prune --production --loglevel warn
+    - echo 🍺 Done!
